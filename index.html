@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tarjeta de Cumpleaños</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #ffe0e9, #ffc3a0);
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .card {
+      background-color: #fff;
+      width: 360px;
+      padding: 2rem;
+      border-radius: 20px;
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      animation: fadeIn 1.5s ease;
+    }
+
+    .cake {
+      font-size: 4rem;
+      animation: bounce 1.5s infinite;
+    }
+
+    h1 {
+      color: #ff5e78;
+      font-size: 2rem;
+      margin-top: 0.5rem;
+    }
+
+    p {
+      color: #333;
+      font-size: 1.1rem;
+      margin-top: 1rem;
+      line-height: 1.5;
+    }
+
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="cake">🎂</div>
+    <h1>¡Feliz Cumpleaños!</h1>
+    <p>Que este nuevo año de vida esté lleno de momentos inolvidables, amor, salud y muchos éxitos. 🎉</p>
+    <p>¡Disfruta tu día al máximo! 🎈</p>
+  </div>
+
+</body>
+</html>
